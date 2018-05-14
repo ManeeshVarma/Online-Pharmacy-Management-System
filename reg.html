@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>registration</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="new 1.css">
+				<script>
+			function myFunction() 
+			{
+				var flag=true;
+				var a=document.getElementById('password').value;
+				var b=document.getElementById('password1').value;
+				var c=document.getElementById('mobile_no').value;
+				var d=document.getElementById('pincode').value;
+				if(d.length!=6)
+				{
+					flag=false;
+					alert("pincode invalid");
+				}
+				if ( a!=b) 
+				{
+					flag=false;
+					alert("password not matching");
+					}
+					//document.getElementById('message').style.color = 'green';
+					//document.getElementById('message').innerHTML = 'Password matching';
+					if(c.length!=10)
+					{
+						alert("invalid mobile_no");
+						flag=false;
+					}
+
+				/*else 
+				{
+					document.getElementById('message').style.color = 'red';
+					<!--document.getElementById('message').innerHTML = 'password not matching';
+					alert("password not matching");
+					return false;
+				}*/
+				return flag;
+			}
+		</script>
+	</head>
+	<body>
+		<table class="first">
+		<tr>
+                    <td style="padding-left:30px"><img src="MEDLIFE.png" style="height:60px;width:120px"></td>
+                    <td><p style="font-size:35px;margin-left:270px"><b>MEDLIFE</b></p></td>
+		<td><a href="home.html"><button style="height:40px;width:100px;">Back</button></a></td>
+		</tr>
+	</table>
+	<div class="ww">
+		<p style="padding-top:5px;text-align:center;">REGISTRATION</p>
+	</div>
+		<form  action="reg.jsp"  name="myform" method="post" onsubmit="return myFunction()"style="padding-top:10px;" >
+
+		<fieldset class="main">
+			<h3> USER DETAILS</h3><hr>
+			
+				<div class="mainData">
+				
+				<table cellspacing="5px" cellpadding="5px" width="850">
+				
+				<tr>
+				<td valign="top"><label><span>First Name</span></td>
+				<td><input type="text" name="firstname" id="firstname" style="height:40px;width:500px;" required placeholder="Enter firstname" /></label><br /><br /></td>
+				</tr>
+                                <tr>
+				<td valign="top"><label><span>Last Name</span></td>
+				<td><input type="text" name="lastname" id="lastname" style="height:40px;width:500px;" required placeholder="Enter lastname" /></label><br /><br /></td>
+				</tr>
+                                <tr>
+				<td valign="top"><label><span>Mobile no</span></td>
+				<td><input type="number" maxlength="10"  name="mobile_no" id="mobile_no" style="height:40px;width:500px;" required placeholder="Enter Registered Mobile no" /></label><br /><br /></td>
+				</tr>
+                                <tr>
+				<td valign="top"><label><span>Email-id</span></td>
+				<td><input type="email" name="email" id="email" style="height:40px;width:500px;" required placeholder="Enter email" /></label><br /><br /></td>
+				</tr>
+				<tr>
+				<td valign="top"><label><span>Username</span></td>
+				<td><input type="text" name="username" id="username" style="height:40px;width:500px;" required placeholder="Enter Username" /></label><br /><br /></td>
+				</tr>
+				<tr>
+                                <tr>
+				<td valign="top"><label><span>Password</span></td>
+				<td><input type="password" name="password" id="password" style="height:40px;width:500px;" required placeholder="Enter password" /></label><br /><br />
+				</td>
+				</tr>
+                     <tr>
+				<td valign="top"><label><span>Confirm Password</span></td>
+				<td><input type="password" name="password1" id="password1" style="height:40px;width:500px;" required placeholder="Re-enter password"   /></label><br /><br /></td>
+				</tr>
+				<td valign="top"><label><span>Address</span></label></td>
+				<td><textarea rows="5" cols="23" name="address" id="address" style="height:40px;width:500px;" required ></textarea>
+				<br /><br /></td>
+				</tr>
+				
+				<tr>
+				<td valign="top"><label><span>Pincode</span></td>
+				<td><input type="number" maxlength="6" name="pincode" id="pincode" style="height:40px;width:500px;" required placeholder="Enter pincode" /></label><br /><br /></td>
+                                </tr>
+				
+			
+				</table>
+				
+				</form>
+			    <span id='message'></span>
+				
+
+				
+                                <div style="margin-left:190px">
+				<input type="submit" name="submit" value="submit" style="height:40px;width:100px;">
+                                                               
+				</div>
+				
+<!--<button type="button" onclick="myFunction()">Try it</button>-->
+			
+				
+				
+				
+				</div>
+				</fieldset>
+                    
+			
+		
+	</body>
+</html>
+<style>
+</style>

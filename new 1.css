@@ -1,0 +1,61 @@
+
+table{
+width:100%;
+}
+
+header{
+	height:70px;
+	background-color:turquoise blue;
+	font-size:60px;
+	padding:10px;
+	text-align:center;
+	background-image:url("1.jpg");
+	color:white;
+}
+
+.ww{
+	background-image:url("reg.jpg");
+	width:100%;
+	font-size:25px;
+	background-color:#4dc3ff;
+	color:white;
+	font-weight:bold;
+	margin: 1;
+    padding: 1;
+	margin-top:8px;
+    radius:2px;
+	height:40px;
+}
+
+
+
+.main
+{
+	height:900px;
+	width:900px;
+	margin-left:205px;
+	margin-top:5px;
+	background-color:white;
+}
+
+
+
+body
+{
+	background-image:url("bg.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.mainData 
+{
+	font-size:20px;
+	width: 750px;
+	margin-left : 0px;
+	padding : 25px 30px;
+	border-radius: 15px;
+	padding-bottom:10px;
+	
+}
+
